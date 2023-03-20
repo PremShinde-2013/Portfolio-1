@@ -1,0 +1,573 @@
+/* font style */
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@300;400&display=swap');
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* :root{
+    --primary-color: rgb(230, 43, 230);
+    --secondary-color: rgb(166, 0, 255);
+    --bg-white: white;
+    --bg-light: rgb(255, 255, 255);
+    --bg-black: black;
+    --bg-gray: #eee;
+
+  } */
+
+
+  body{
+font-family: 'Comic Neue', cursive;
+font-family: 'Roboto', sans-serif;
+width: 100%;
+background-repeat:no-repeat ;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+  ::-webkit-scrollbar{
+    width: 0.80rem;
+    
+  }
+  ::-webkit-scrollbar-track{
+    background-color: rgb(232, 232, 232);
+    
+  }
+  ::-webkit-scrollbar-thumb{
+   background: rgb(217, 187, 255);
+    
+  }
+
+  section{
+    padding: 4rem 0;
+  }
+
+  .main-btn{
+    
+
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #e782f6 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Comic neue', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    max-width: auto;
+    min-width: auto;
+    padding: 3px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    
+  }
+  
+  .main-btn:active,
+  .main-btn:hover {
+    outline: 0;
+  }
+  
+  .main-btn span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width:auto;
+    height:auto;
+    transition: 300ms;
+  }
+  
+  .main-btn:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 200px) {
+    .main-btn {
+      font-size: 24px;
+      min-width: 196px;
+      
+    }
+  }
+  
+
+  
+  
+  
+  .secondary-btn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .secondary-btn:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .secondary-btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+ 
+
+
+
+h1{
+    font-size: 4.37rem;
+    font-weight: 550;
+    line-height: 3.75rem;
+    color: black;
+    margin-bottom: 1.2rem;
+    font-family: 'Comic neue', cursive;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.45rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    font-family: 'Comic neue', cursive;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.125rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-family: 'Comic neue', cursive;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+    color: black;
+    margin-bottom: 2.5rem;
+    font-family: 'Comic neue', cursive;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgb(104, 104, 104);
+    font-family: 'Comic neue',cursive;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+
+
+
+/* common End */
+
+
+  .header_wrapper .navbar{
+    padding: 0.9rem 0;
+    -o-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+
+ .header_wrapper .navbar-brand {
+    max-width: 10px;
+    height: auto;
+ }
+
+ .header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+    
+ }
+
+ .header_wrapper .nav-item{
+    margin: 0 .8rem;
+ }
+ .header_wrapper .nav-item .nav-link{
+    font-family: 'Comic neue', cursive;
+    font-size: 1rem;
+    font-weight: 510;
+    text-transform: uppercase;
+    color: rgb(154, 90, 250);
+    display: inline-block;
+
+ }
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: rgb(248, 95, 220);
+}
+
+
+.header-scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0.25rem 0.25rem rgb(141, 141, 141);
+}
+
+ .btn-primary{
+    background-color: rgb(237, 74, 221);
+}
+
+.banner_wrapper .banner-content{
+    vertical-align: middle;
+    align-self: center;
+}
+
+.banner_wrapper .banner-content h2::after{
+    content: "";
+    width: 55%;
+    height: 0.25rem;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+background: black;
+overflow-x:hidden;
+}
+
+.row{
+  margin-top: 50px;
+}
+
+
+.about_wrapper .single-logo-item{
+  width: 100%;
+  height: 6.8rem;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.05rem solid gray;
+  box-shadow: none;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition:all .4s ease 0s ;
+  -ms-transition: all .4s ease 0s;
+-moz-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+.about_wrapper .single-logo-item:hover{
+  border: 0.06rem solid transparent;
+  box-shadow: 0 0.5rem 1.8rem rgb(153, 153, 153);
+}
+
+.about_wrapper .client-info{
+  padding: 1.5rem 1.8rem;
+  background: rgb(255, 255, 255);
+  position:relative;
+
+  margin-top: 10rem;
+
+}
+.about_wrapper .client-info:before{
+  content:'';
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  background: url('../images/box.png');
+  background-repeat: no-repeat;
+  height: 10rem;
+  width: 10rem;
+
+}
+.about_wrapper .client-info .large{
+  color: rgb(226, 78, 252);
+  font-family: 'Comic neue', cursive;
+  
+  font-size: 6.2rem;
+  position: relative;
+  z-index: 9;
+  font-weight: 600;
+}
+
+.about_wrapper .client-info .smll{
+  text-align: left;
+  color: black;
+  font-family: 'Comic neue', cursive;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+margin-top: -1rem;
+  font-weight: 650;
+}
+.about_wrapper .client-info .call-now span {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: -1rem;
+  margin-left: 2.8rem;
+  color: black;
+
+}
+.about_wrapper .client-info .call-now p{
+  color: #e782f6;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+.about_wrapper .client-info .call-now h5{
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.services_wrapper .card{
+  
+  background-color: rgb(255, 250, 250);
+  cursor: pointer;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  -ms-transition:all .4s ease 0s;
+
+  transition: all .4s ease 0s;
+}
+.services_wrapper .card:hover{
+   box-shadow: 0 0.9rem 1.8rem rgb(120, 120, 120) ;
+   background: rgb(255, 255, 255);
+}
+
+.portfolio_wrapper .nav-link{
+font-size: 1rem;
+font-weight: 700;
+margin-right: 0.25rem;
+color: #111;
+text-transform: uppercase;
+}
+
+.portfolio_wrapper .nav-link.active{
+  color: #ff00c8;
+  background-color:transparent;
+}
+
+.portfolio_wrapper .portfolio-img{
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio_wrapper .portfolio-img .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  -ms-transition:all .4s ease 0s;
+
+  transition: all .4s ease 0s;
+
+}
+
+.portfolio_wrapper .portfolio-img:hover .overlay{
+background: rgba(247, 141, 217 , .5);
+}
+
+.portfolio_wrapper .portfolio-img .overlay i{
+  font-size: 6.25rem;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: -0;
+  visibility: hidden;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  -ms-transition:all .4s ease 0s;
+
+  transition: all .4s ease 0s;
+}
+
+.portfolio_wrapper .portfolio-img:hover .overlay i{
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+}
+
+/* <!-- HTML !-->
+<button class="button-64" role="button"><span class="text">Button 64</span></button> */
+
+/* CSS */
+.btn-3 {
+  align-items: center;
+  background: transparent;
+  border: 0.12rem solid rgb(255, 237 ,237);
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 3em;
+  height: 50px;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-3:active,
+.button-3:hover {
+  outline: 0;
+}
+
+.button-3 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-3:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 10px;
+    min-width: 196px;
+  }
+}
+
+.footer_wrapper .newsletter {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 9.3rem 0;
+}
+
+.footer_wrapper input{
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  border: 0.12rem solid rgb(255, 237, 237);
+  background: transparent;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  color: rgb(255, 230, 238);
+}
+.footer_wrapper .form-control:focus{
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  outline: 0;
+  box-shadow: none;
+}
+
+.footer_wrapper .form-control::placeholder{
+  color: white;
+}
+
+.footer_wrapper .social-icons li{
+    margin: 0.3rem;
+}
+
+.footer_wrapper .social-icons li a{
+  line-height: 1.8rem;
+  font-size:1.5rem;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  margin: 0 0.6rem;
+}
+
+.footer_wrapper .social-icons li a:hover{
+  color: rgb(155, 84, 255);
+}
+
+.footer_wrapper .footer-text{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+.footer_wrapper .footer-text a{
+  color: #ad40f6;
+}
+
+.details_left{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Comic nenu', cursive;
+
+}
